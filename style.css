@@ -29,20 +29,11 @@ a:hover{
     color: black;
 }
 
-button{
-    text-decoration: none;
-    color: white;
-    width: 100px;
-    height: 40px;
-    border-radius: 5px;
-    font-family: 'Roboto Mono', monospace;
-}
-
-p{
+header p{
     position: relative;
 }
 
-p::before {
+header p::before {
     content: "";
     position: absolute;
     top: 100%;
@@ -92,6 +83,11 @@ div.s{
 div.s img{
     float: left;
     padding-right: 10px;
+    transition: 0.3s;
+}
+
+div.s img:hover{
+    opacity: 0.7;
 }
 
 div.s h3{
@@ -142,12 +138,18 @@ div.f #ic{
 
 #up{
     background-color: rgb(102, 70, 219);
+    padding: 5px;
+    border-radius: 5px;
 }
 
 #creat{
     background: rgb(135, 61, 165);
+    padding: 5px;
+    border-radius: 5px;
 }
 
 #login{
     background-color: grey;
+    padding: 5px;
+    border-radius: 5px;
 }
