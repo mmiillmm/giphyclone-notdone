@@ -148,6 +148,8 @@ div.f #ic{
     float: left;
     max-width: 310px;
     transition: 0.3s;
+    border-radius: 35px;
+    box-shadow: 0px black;
 } 
 
 .bottom-left {
@@ -172,6 +174,7 @@ div.f #ic{
 
 .containerart img:hover {
     opacity: 0.7;
+    box-shadow: 10px 5px 5px black;
 }
 
 .containerart2 .bottom-left2, .bottom-left-bottom2{
@@ -207,6 +210,7 @@ div.f #ic{
 
 .containerart img:hover {
     opacity: 0.7;
+    transform: scale(1.1);
 }
 
 .containerart3 .bottom-left3, .bottom-left-bottom3{
@@ -259,6 +263,45 @@ div.f #ic{
     user-select: none;
 }
 
+div.v {
+    display: flex;
+    max-width: 400px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+    align-items: center;
+    justify-content: center;
+    overflow: show;
+    border-radius: 15px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+div.v img{
+    width: 100%;
+    transition: 0.3s;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 0.2px rgba(0, 0, 0, 0.2);
+}
+
+div.v img:hover{
+    transform: scale(0.8);
+}
+
+div.coc h5{
+    bottom: 50px;
+}
+
 #pumpkin{
     display: block;
     margin-left: auto;
@@ -301,4 +344,9 @@ div.f #ic{
     float: right;
     padding-left: 10px;
     align-items: center;
+}
+
+#picsdasd{
+    float: left;
+    padding-right: 5px;
 }
