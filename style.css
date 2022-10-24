@@ -106,6 +106,10 @@ div.f{
     color: white;
 }
 
+div.f h3{
+    padding-bottom: 22px;
+}
+
 div.f #ic{
     float: left;
     padding-right: 10px;
@@ -126,8 +130,118 @@ div.f #ic{
     margin: 15em;
 }
 
-.containerart img:hover{
-    background-color: grey;
+.containerart {
+    display: flex;
+    position: relative;
+    text-align: center;
+    color: white;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.containerart .bottom-left, .bottom-left-bottom{
+    font-size: small;
+}
+
+.containerart img{
+    width: 15%;
+    float: left;
+    max-width: 310px;
+    transition: 0.3s;
+} 
+
+.bottom-left {
+    position: absolute;
+    bottom: 30px;
+    left: 60px;
+    color: white;
+}
+
+.bottom-left-bottom {
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+    color: #90EE90;
+}
+
+.bottom-left-img {
+    position: absolute;
+    bottom: 17px;
+    left: 10px;
+}
+
+.containerart img:hover {
+    opacity: 0.7;
+}
+
+.containerart2 .bottom-left2, .bottom-left-bottom2{
+    font-size: small;
+}
+
+.containerart2 img{
+    width: 15%;
+    float: left;
+    max-width: 300px;
+    transition: 0.3s;
+} 
+
+.bottom-left2 {
+    position: absolute;
+    bottom: 30px;
+    left: 400px;
+    color: white;
+}
+
+.bottom-left-bottom2 {
+    position: absolute;
+    bottom: 10px;
+    left: 400px;
+    color: #90EE90;
+}
+
+.bottom-left-img2 {
+    position: absolute;
+    bottom: 17px;
+    left: 350px;
+}
+
+.containerart img:hover {
+    opacity: 0.7;
+}
+
+.containerart3 .bottom-left3, .bottom-left-bottom3{
+    font-size: small;
+}
+
+.containerart3 img{
+    width: 15%;
+    float: left;
+    max-width: 300px;
+    transition: 0.3s;
+} 
+
+.bottom-left3 {
+    position: absolute;
+    bottom: 30px;
+    left: 740px;
+    color: white;
+}
+
+.bottom-left-bottom3 {
+    position: absolute;
+    bottom: 10px;
+    left: 740px;
+    color: white;
+}
+
+.bottom-left-img3 {
+    position: absolute;
+    bottom: 17px;
+    left: 690px;
+}
+
+.containerart3 img:hover {
+    opacity: 0.7;
 }
 
 .prev, .next {
@@ -179,4 +293,12 @@ div.f #ic{
 
 #login:hover{
     cursor: pointer;
+}
+
+#badge{
+    display: flex;
+    width: 20px;
+    float: right;
+    padding-left: 10px;
+    align-items: center;
 }
