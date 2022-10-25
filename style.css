@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+:root {
+    --x: 0%;
+}
+
 body{
     background-color: #121212;
     font-family: 'Roboto Mono', monospace;
@@ -74,7 +78,7 @@ input.nosubmit {
 }
 
 div.s{
-    max-width: 1050px;
+    max-width: 1040px;
     margin: auto;
     font-size: medium;
     color: white;
@@ -82,7 +86,8 @@ div.s{
 
 div.s img{
     float: left;
-    padding-right: 10px;
+    padding-right: 7px;
+    padding-left: 7px;
     transition: 0.3s;
 }
 
@@ -136,11 +141,9 @@ div.f #ic{
     text-align: center;
     color: white;
     align-items: flex-start;
-    gap: 30px;
-}
-
-.containerart .bottom-left, .bottom-left-bottom{
-    font-size: small;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 45px;
 }
 
 .containerart img{
@@ -155,30 +158,26 @@ div.f #ic{
 .bottom-left {
     position: absolute;
     bottom: 30px;
-    left: 60px;
+    left: 80px;
     color: white;
 }
 
 .bottom-left-bottom {
     position: absolute;
     bottom: 10px;
-    left: 60px;
+    left: 90px;
     color: #90EE90;
 }
 
 .bottom-left-img {
     position: absolute;
     bottom: 17px;
-    left: 10px;
+    left: 30px;
 }
 
-.containerart img:hover {
+.containerart img:hover{
     opacity: 0.7;
     box-shadow: 10px 5px 5px black;
-}
-
-.containerart2 .bottom-left2, .bottom-left-bottom2{
-    font-size: small;
 }
 
 .containerart2 img{
@@ -191,24 +190,24 @@ div.f #ic{
 .bottom-left2 {
     position: absolute;
     bottom: 30px;
-    left: 400px;
+    left: 430px;
     color: white;
 }
 
 .bottom-left-bottom2 {
     position: absolute;
     bottom: 10px;
-    left: 400px;
+    left: 440px;
     color: #90EE90;
 }
 
 .bottom-left-img2 {
     position: absolute;
     bottom: 17px;
-    left: 350px;
+    left: 385px;
 }
 
-.containerart img:hover {
+.containerart img:hover{
     opacity: 0.7;
     transform: scale(1.1);
 }
@@ -227,21 +226,21 @@ div.f #ic{
 .bottom-left3 {
     position: absolute;
     bottom: 30px;
-    left: 740px;
+    left: 790px;
     color: white;
 }
 
 .bottom-left-bottom3 {
     position: absolute;
     bottom: 10px;
-    left: 740px;
+    left: 800px;
     color: white;
 }
 
 .bottom-left-img3 {
     position: absolute;
     bottom: 17px;
-    left: 690px;
+    left: 745px;
 }
 
 .containerart3 img:hover {
@@ -265,7 +264,8 @@ div.f #ic{
 
 div.v {
     display: flex;
-    max-width: 400px;
+    width: 1040px;
+    height: 400px;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 5s ease infinite;
@@ -273,6 +273,7 @@ div.v {
     justify-content: center;
     overflow: show;
     border-radius: 15px;
+    gap: 20px;
 }
 
 @keyframes gradient {
@@ -288,7 +289,7 @@ div.v {
 }
 
 div.v img{
-    width: 100%;
+    width: 25%;
     transition: 0.3s;
     border-radius: 15px;
     box-shadow: 5px 5px 5px 0.2px rgba(0, 0, 0, 0.2);
@@ -350,3 +351,39 @@ div.coc h5{
     float: left;
     padding-right: 5px;
 }
+
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    align-items: center;
+    background-color: #f9f9f9;
+    min-width: 585px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
